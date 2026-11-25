@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FDFBF7;
+  --color-cream-soft: #F5EFEB;
+  --color-dark-brown: #23140E;
+  --color-chocolate: #2E1A11;
+  --color-chocolate-dark: #1A0E08;
+  --color-chocolate-card: #382015;
+  --color-sage: #7B8F71;
+  --color-sage-dark: #58694F;
+  --color-sage-light: #EBF0E8;
+  --color-caramel: #C88342;
+  --color-caramel-hover: #B47132;
+  
+  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom design utilities adhering to landing-page-design skill */
+@layer base {
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-dark-brown);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+/* 3D card perspective & chocolate drip aesthetics */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Subtle glow and glass styles */
+.glass-nav {
+  background: rgba(253, 251, 247, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-chocolate {
+  background: rgba(35, 20, 14, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
